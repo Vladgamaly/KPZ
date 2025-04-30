@@ -2,7 +2,7 @@ import pandas as pd
 from pandas import DataFrame 
 from datetime import datetime as dt 
 try:
-    data_frame = pd.read_csv('result.csv')
+    data_frame = pd.read_csv('lr2result.csv')
 except FileNotFoundError:
     columns = ['years', 'month', 'day', 'hour', 'minute', 'second']
     data_frame = DataFrame(columns=['years', 'month', 'day', 'hour', 'minute', 'second'])
